@@ -178,7 +178,7 @@ void loop()
 
     levelg = aantalg;
     aantalg++;
-    if (aantalg == 4)
+    if (aantalg == 5)
     {
       aantalg = 0;
     }
@@ -186,7 +186,7 @@ void loop()
   switch (levelg)
   {
   case 0:
-    Keyboard.print('4');
+    Keyboard.print('a');
     Keyboard.print('1');
     break;
   case 1:
@@ -202,8 +202,12 @@ void loop()
     Keyboard.print('3');
     Keyboard.print('4');
     break;
+      case 4:
+    Keyboard.print('4');
+    Keyboard.print('a');
+    break;
   }
-  levelg = 5;
+  levelg = 6;
   oldstateg = stateg;
   if (statel != oldstatel && statel == 1)
   {
